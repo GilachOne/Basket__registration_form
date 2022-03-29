@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<!--СТРАНИЦА РЕГИСТРАЦИИ-->
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+    
+    <div class="form">
+
+        <!-- RUN Wellcome-->
+        <div class="wellcome"><img src="images/basket-logo.png">
+        
+        <h1>Добро пожаловать вМагазин</h1>
+    </div>
+        <!-- END -->
+
+
+<div class="tabs">
+    <div class="tab3"><a class="sw-link"  href="sign-in.html">Вход</a></div>
+    <div class="tab4"><a class="no-link"  href="">Регистрация</a></div>
+</div>
+
+<!-- END -->
+        <br>     
+<!-- RUN Инпуты-->
+
+
+
+<div class="text-field__icon text-field__icon_email">
+    <input type="text" placeholder="Почта" name="email" required>
+</div>
+    
+<div class="text-field__icon text-field__icon_login">
+        <input type="text" placeholder="Логин" name="text" required>
+</div>
+        
+              <!-- RUN Password safe input-->
+              <div class="password">
+                <input type="password" id="password-input" placeholder="Введите пароль" name="password" value="">
+                <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+            </div>
+    
+    
+            <script>
+                function show_hide_password(target){
+                    var input = document.getElementById('password-input');
+                    if (input.getAttribute('type') == 'password') {
+                        target.classList.add('view');
+                        input.setAttribute('type', 'text');
+                    } else {
+                        target.classList.remove('view');
+                        input.setAttribute('type', 'password');
+                    }
+                    return false;
+                }
+                </script>
+       
+        
+        <button type="submit" class="registerbtn" href="sign-up.html">Регистрация</button>
+      
+        
+</body>
+</html>

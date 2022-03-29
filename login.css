@@ -1,0 +1,238 @@
+
+body {background-color: #F6EAFF;}
+
+* {box-sizing: border-box;}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 428px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    
+  }
+
+  /*Табы*/ 
+.tabs {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1rem solid #d2d8e0;
+    margin-bottom: 32px;
+   
+}
+
+/*sign up*/
+.tab1 {
+    padding: 2rem 3.5rem;
+    text-decoration: none;
+    color: #778ca3;
+    cursor: pointer;
+    color: #A68FE5;
+    }
+.tab2 {
+  padding: 0rem 3.5rem ;
+  padding-right: 12rem;
+    
+}
+
+/*sign in*/
+
+.tab3 {
+  padding: 2rem 3.5rem;
+  text-decoration: none;
+  color: #778ca3;
+    cursor: pointer;
+    color: #A68FE5;
+ 
+  }
+.tab4 {
+padding: 0rem 3.5rem ;
+padding-right: 12rem;
+color: #778ca3;
+cursor: pointer;
+color: #A68FE5;
+  }
+
+
+
+.sw-link {
+    
+    color: inherit;
+    background-color: initial;
+    text-decoration: none;
+    cursor: pointer;
+    
+    
+}
+
+.no-link { 
+    
+    color: #2C107A;
+    background-color: initial;
+    text-decoration: none;
+    cursor: auto; 
+    border-bottom: 0.3rem solid #2C107A;
+    }
+   
+   
+   .link { 
+    display: flex;
+    padding-left: 23%;
+    color: #A68FE5;
+     background-color: initial;
+      text-decoration: none;
+      cursor: pointer; 
+      font-size: 18px;
+          }
+
+a {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+        
+  }
+
+ /* конец Табы*/
+
+  img{
+    width: 188px;
+    height: 188px;
+    left: 120px;
+    top: 49px;
+ 
+}
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #2C107A;
+    
+  }
+  
+
+
+/* Инпут */
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  height: 52px;
+  padding: 15px;
+  margin: 0 0 12px 0;
+  display: inline-block;
+  border: none;
+ 
+  background: #F6EAFF;
+  border-radius: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+  border-color: #a391d4;
+  outline: none;
+} 
+
+/*Input icons*/
+
+.text-field__icon {
+  position: relative;
+}
+
+.text-field__icon::before {
+  content: '';
+  color: #bdbdbd;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 18.4rem;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.text-field__icon .text-field__input {
+  padding-left: 2rem;
+}
+
+/* иконка почты */
+.text-field__icon_email::before {
+  width: 2rem;
+  background-image: url("images/svg/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* иконка логин */
+.text-field__icon_login::before {
+  width: 2rem;
+  background-image: url("images/svg/user.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Password safe*/
+.password {
+	width: 100%;
+	position: relative;
+}
+
+.password-control {
+	position: absolute;
+	top: 11px;
+	right: 6px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(images/svg/eye-off.svg) 0 0 no-repeat;
+}
+
+.password-control.view {
+	background: url(images/svg/eye.svg) 0 0 no-repeat;
+}
+
+
+
+/* Кнопка регистрации */
+.registerbtn {
+  background-color: #08DA36;
+  border-radius: 3px;
+  color: white;
+  padding: 16px 20px;
+  margin: 32px 32px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.signinbtn {
+  background-color: #2C107A;
+  border-radius: 3px;
+  color: white;
+  padding: 16px 20px;
+  margin: 32px 32px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
